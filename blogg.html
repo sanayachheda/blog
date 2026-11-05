@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+     <!--
+    navbar will apply default navbar styling
+    navbar-inverse will give dark background colour with light text
+    navbar-fixed-top makes the navbar stick to the top of the screen even when scrolling
+    -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <!--
+    container-fluid means the width stretches across the entire screen and also waps the content inside the navbar
+    navbar-header contains the brand logo or name
+    bootstrap uses the section to handle responsive navigation layout
+    navbar-toggle will convert the menu items into toggle button
+    data-toggle=collapse enables collapsing effect(hide and show effect) of the buttons
+    data-target=# tells the button which menu to show or hide accordingly
+-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Environment</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- Travel Section -->
+    <div class="page-header" id="travel">
+        <h2>Top Adventures</h2>
+    </div>
+
+    <div class="adventure-section">
+        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?fm=jpg&q=60&w=3000"
+             class="img-responsive">
+        <h4>Hiking in the Mountains!</h4>
+        <p class="text-muted">
+            Escape the everyday and elevate your spirit. Hiking in the mountains offers a breathtaking journey
+            above the clouds and a chance to reconnect with nature.
+        </p>
+    </div>
+
+    <div class="adventure-section">
+        <img src="https://wildkasarwadi.com/assets/uploads/experiences/jungle_safari.jpg"
+             class="img-responsive">
+        <h4>Safari in the Mountain</h4>
+        <p class="text-muted">
+            Experience the wild untamed, where every rustle in the leaves could be a lion’s tail.
+        </p>
+    </div>
+
+    <!-- Movie Section -->
+    <div class="page-header" id="movies">
+        <h2>Movie Reviews</h2>
+    </div>
+
+    <div class="movie-section">
+        <div class="movie-head" data-toggle="collapse" data-target="#review1">
+            <span class="glyphicon glyphicon-film"></span>
+            Harry Potter and the Sorcerer’s Stone
+        </div>
+
+        <div id="review1" class="collapse">
+            <div class="movie-text">
+                <h5>
+                    Magical and Action-Packed
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <p>
+                    A visually stunning film that brings J.K. Rowling’s magical world to life with unforgettable
+                    characters and breathtaking visuals.
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="movie-head" data-toggle="collapse" data-target="#review2">
+            <span class="glyphicon glyphicon-film"></span>
+            Wicked
+        </div>
+
+        <div id="review2" class="collapse">
+            <div class="movie-text">
+                <h5>
+                    A Powerful Musical Experience
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <p>
+                    Wicked delivers stunning performances and emotional depth, making it a musical fans will
+                    cherish.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Environment Section -->
+    <div class="page-header" id="environment">
+        <h2>Environmental News</h2>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-info">
+            <h4>Protecting the Rainforests</h4>
+            <p>Rainforests are essential for biodiversity and climate balance.</p>
+        </li>
+
+        <li class="list-group-item list-group-item-danger">
+            <h4>Ocean Clean-Up Initiatives</h4>
+            <p>Innovative technologies are helping remove plastic from oceans.</p>
+        </li>
+
+        <li class="list-group-item list-group-item-success">
+            <h4>Success From Our Efforts</h4>
+            <p>
+                AI-powered barriers are removing millions of kilograms of plastic from oceans and rivers.
+            </p>
+        </li>
+
+        <li class="list-group-item list-group-item-warning">
+            <h4>Fun Facts!</h4>
+            <p>
+                Recycling one aluminum can saves enough energy to run a TV for three hours.
+            </p>
+        </li>
+    </ul>
+
+    <!-- Books Section -->
+    <div class="page-header" id="books">
+        <h2>Books on Adventure</h2>
+    </div>
+
+    <!-- Book 1 -->
+    <div class="book-section">
+        <div class="book-head" data-toggle="modal" data-target="#book1">
+            <span class="glyphicon glyphicon-book"></span>
+            Super Sleuth
+        </div>
+
+        <div class="modal fade" id="book1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Super Sleuth</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="https://res.cloudinary.com/arenaillustration/image/upload/f_auto/Adam-Stower_Super-Sleuth_Feature_tepzde"
+                             class="img-responsive"
+                             style="height:300px;">
+                        <p>
+                            A fun children’s mystery about Dilly and her dog Watson solving crimes aboard a cruise
+                            ship. Full of humor and illustrations.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book 2 (NEW) -->
+    <div class="book-section">
+        <div class="book-head" data-toggle="modal" data-target="#book2">
+            <span class="glyphicon glyphicon-book"></span>
+            Journey to the River Sea
+        </div>
+
+        <div class="modal fade" id="book2" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Journey to the River Sea</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="https://ik.imagekit.io/panmac/india/tr:di-placeholder_portrait_aMjPtD9YZ.jpg,tr:w-350,f-jpg,pr-true/edition/9781529066197.jpg"
+                             class="img-responsive"
+                             style="height:300px;">
+                        <p>
+                            A beautifully written adventure set in the Amazon rainforest. The book follows Maia
+                            as she explores friendship, courage, and self-discovery in the heart of nature.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<section id="about-me" class="container my-5 page-header">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="IMG_4626.jpeg" alt="Author's Picture" class="img-responsive img-circle">
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>supppp! im sanaya, an enthusicastic person who loves adventure!this blog shares my personal favourite foods,travel destinations, books and lots more. i hope you find my posts helpful ^_^ :D </p>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
